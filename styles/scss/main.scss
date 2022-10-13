@@ -30,6 +30,12 @@ html, body {
     #box {
         width: 400px;
     }
+
+    @media only screen and (max-width: 400px) {
+        #box {
+            width: 260px;
+        }
+    }
 }
 
 .message {
