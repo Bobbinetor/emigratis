@@ -22,7 +22,7 @@ window.onload = () => {
                         <div class="message slide-up">
                             <h2>Sei bona</h2>
 
-                            <a>Riscuoti il regalo!</a>
+                            <a href="https://bobbinetor.github.io/emigratis/gift.pdf" type="download">Riscuoti il regalo!</a>
                         </div>
         
                     `)
