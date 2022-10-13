@@ -27,6 +27,11 @@ window.onload = () => {
         
                     `)
                 }, 700)
+            } else {
+                password.classList.add('shake')
+                setTimeout(() => {
+                   password.classList.remove('shake') 
+                }, 500);
             }
         }
     })

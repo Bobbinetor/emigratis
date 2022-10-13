@@ -92,6 +92,22 @@
     transform: rotate(360deg);
   }
 }
+@-webkit-keyframes shake {
+  from {
+    transform: translateX(-5px);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+@keyframes shake {
+  from {
+    transform: translateX(-5px);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
 .scale-down {
   -webkit-animation: scaleDown 1s ease-out 1 forwards;
           animation: scaleDown 1s ease-out 1 forwards;
@@ -113,6 +129,11 @@
 .rotate {
   -webkit-animation: rotate 5s ease-out alternate infinite forwards;
           animation: rotate 5s ease-out alternate infinite forwards;
+}
+
+.shake {
+  -webkit-animation: shake 0.1s linear alternate 3;
+          animation: shake 0.1s linear alternate 3;
 }
 
 .delay-0 {

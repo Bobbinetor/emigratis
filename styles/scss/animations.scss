@@ -52,6 +52,16 @@
     
 }
 
+@keyframes shake {
+    from {
+        transform: translateX(-5px);
+    }
+    to {
+        transform: translateX(5px);
+    }
+    
+}
+
 .scale-down {
     animation: scaleDown 1s ease-out 1 forwards;
     visibility: hidden;
@@ -66,6 +76,9 @@
 }
 .rotate {
     animation: rotate 5s ease-out alternate infinite forwards;
+}
+.shake {
+    animation: shake 0.1s linear alternate 3; 
 }
 @for $x from 0 through 10 {
     $delay : $x * .1s;
