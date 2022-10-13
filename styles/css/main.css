@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+* {
+  font-family: "Kaushan Script", sans-serif, monospace;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@-webkit-keyframes scaleDown {
+  from {
+    transform: scale(2);
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes scaleDown {
+  from {
+    transform: scale(2);
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@-webkit-keyframes slideUp {
+  from {
+    transform: translateY(120px) scale(0.4);
+    opacity: 0;
+    visibility: hidden;
+  }
+  15% {
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-80px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(120px) scale(0.4);
+    opacity: 0;
+    visibility: hidden;
+  }
+  15% {
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-80px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.scale-down {
+  -webkit-animation: scaleDown 1s ease-out 1 forwards;
+          animation: scaleDown 1s ease-out 1 forwards;
+  visibility: hidden;
+}
+
+.fade-in {
+  -webkit-animation: fadeIn 0.5s ease-out 1 forwards;
+          animation: fadeIn 0.5s ease-out 1 forwards;
+  visibility: hidden;
+}
+
+.slide-up {
+  -webkit-animation: slideUp 10s cubic-bezier(0, 0.25, 0.48, -0.19) 1 forwards;
+          animation: slideUp 10s cubic-bezier(0, 0.25, 0.48, -0.19) 1 forwards;
+  visibility: hidden;
+}
+
+.rotate {
+  -webkit-animation: rotate 5s ease-out alternate infinite forwards;
+          animation: rotate 5s ease-out alternate infinite forwards;
+}
+
+.delay-0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.delay-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.delay-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.delay-3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.delay-4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.delay-5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.delay-6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.delay-7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.delay-8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.delay-9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.delay-10 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+html h2, body h2 {
+  z-index: 99999;
+}
+
+.center {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  height: 100vh;
+  width: 100%;
+}
+.box > * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.box #box {
+  width: 400px;
+}
+
+.message {
+  position: absolute;
+  top: 165px;
+  z-index: 1000000000000000000000000000000;
+  background-color: white;
+  border-radius: 45px;
+  text-align: center;
+  min-width: 125px;
+  padding: 40px;
+  box-shadow: 2px 2px 10px 0 pink;
+}
+.message a {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.form-wrapper {
+  position: absolute;
+  margin: auto;
+  top: 40%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.062745098);
+  padding: 20px;
+  z-index: 999999999999999;
+}
+.form-wrapper.hidden {
+  display: none !important;
+}
+.form-wrapper input {
+  margin-top: 10px;
+  font-size: 2em;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid lightgrey;
+  border-radius: 7px;
+  transition: all 0.2s ease;
+}
+.form-wrapper input:focus, .form-wrapper input:active {
+  outline: none;
+  border: none;
+  box-shadow: 2px 2px 2px 3px pink;
+}/*# sourceMappingURL=main.css.map */

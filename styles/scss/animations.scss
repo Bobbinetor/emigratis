@@ -1,0 +1,76 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes scaleDown {
+    from {
+        transform: scale(2);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(120px) scale(.4);
+        opacity: 0;
+        visibility: hidden;
+    }    
+    15% {
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+        visibility: visible;
+    } 
+    100% {
+        transform: translateY(-80px);
+        opacity: 1;
+        visibility: visible;
+    }   
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.scale-down {
+    animation: scaleDown 1s ease-out 1 forwards;
+    visibility: hidden;
+}
+.fade-in {
+    animation: fadeIn .5s ease-out 1 forwards;
+    visibility: hidden;
+}
+.slide-up {
+    animation: slideUp 10s cubic-bezier(0,.25,.48,-0.19) 1 forwards;
+    visibility: hidden;
+}
+.rotate {
+    animation: rotate 5s ease-out alternate infinite forwards;
+}
+@for $x from 0 through 10 {
+    $delay : $x * .1s;
+
+    .delay-#{$x} {
+        animation-delay: $delay;
+    }
+}
