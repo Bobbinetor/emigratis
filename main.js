@@ -44,7 +44,7 @@ window.onload = () => {
     function hideForm () {
         pwContainer.classList.add('hidden')
     }
-
+    //ssks
     function openBox () {
         hideForm()
         box.src = "assets/images/box.gif"
