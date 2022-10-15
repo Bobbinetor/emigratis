@@ -13,7 +13,7 @@ window.onload = () => {
         if (e.key === 'Enter') {
             const pw = password.value
 
-            if (pw === 'DA DOMANI MI ALZO TARDI') {
+            if (pw === 'da domani mi alzo tardi') {
                 openBox()
 
                 setTimeout(() => {
