@@ -22,7 +22,7 @@ window.onload = () => {
                         <div class="message slide-up">
                             <h2>Non è per Napoli ma...</h2>
 
-                            <a href="https://bobbinetor.github.io/emigratis/gift.pdf" type="download">Sturm und Drang!</a>
+                            <a href="https://bobbinetor.github.io/emigratis/gift.pdf" type="download">CLICCA QUI!</a>
                         </div>
         
                     `)
