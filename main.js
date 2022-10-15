@@ -20,9 +20,9 @@ window.onload = () => {
                     wrapper.insertAdjacentHTML('beforebegin', `
                     
                         <div class="message slide-up">
-                            <h2>Finalmente ce l'hai fatta\n Stasera non prendere impegni</h2>
+                            <h2>Non è per Napoli ma...</h2>
 
-                            <a href="https://bobbinetor.github.io/emigratis/gift.pdf" type="download">Riscuoti il regalo!</a>
+                            <a href="https://bobbinetor.github.io/emigratis/gift.pdf" type="download">Sturm und Drang!</a>
                         </div>
         
                     `)
